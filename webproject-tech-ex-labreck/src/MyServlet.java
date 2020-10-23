@@ -1,5 +1,3 @@
-
-
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -27,7 +25,7 @@ public class MyServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("What's Up?");
+		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
 	/**
